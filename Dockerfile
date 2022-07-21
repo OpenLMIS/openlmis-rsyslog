@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-RUN apk add --update rsyslog && \
+RUN apk add --update rsyslog logrotate && \
     rm -rf /var/cache/apk/*
 
 EXPOSE 514 514/udp
